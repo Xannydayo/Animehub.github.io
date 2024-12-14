@@ -18,7 +18,6 @@
                                     <li><a href="/categories">Categories</a></li>
                                     <li><a href="/anime/detail">Anime Details</a></li>
                                     <li><a href="/watching">Anime Watching</a></li>
-                                    <li><a href="/blog/detail">Blog Details</a></li>
                                     <li><a href="/signup">Sign Up</a></li>
                                     <li><a href="/login">Login</a></li>
                                 </ul>

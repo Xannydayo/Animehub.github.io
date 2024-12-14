@@ -53,7 +53,7 @@
     <!-- Breadcrumb End -->
     
     <!-- Anime Section Begin -->
-    <section class="anime-details spad">
+    <section class="anime-details pad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
