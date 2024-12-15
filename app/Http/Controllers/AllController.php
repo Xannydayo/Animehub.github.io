@@ -68,4 +68,22 @@ class AllController extends Controller
 
         return redirect('/login');
     }
+
+    public function loginProcess(Request $request) {
+
+        $request->validate([
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
+
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+
+            return redirect()->intended('/index')->with('success', 'Login berhasil! Selamat datang.');
+        }
+
+
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ]);
+    }
 }

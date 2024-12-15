@@ -57,19 +57,33 @@
                 <div class="col-lg-6">
                     <div class="login__form">
                         <h3>Login</h3>
-                        <form action="{{ route('home') }}" method="POST">
+                        <!-- Menampilkan pesan sukses atau kesalahan -->
+                        @if (session('success'))
+                            <div class="alert alert-success">
+                                {{ session('success') }}
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="{{ route('login.process') }}" method="POST">
                             @csrf
                             <div class="input__item">
-                                <input type="text" placeholder="Email address">
+                                <input type="text" name="email" placeholder="Email address" required>
                                 <span class="icon_mail"></span>
                             </div>
                             <div class="input__item">
-                                <input type="password" placeholder="Password">
+                                <input type="password" name="password" placeholder="Password" required>
                                 <span class="icon_lock"></span>
                             </div>
                             <button type="submit" class="site-btn">Login Now</button>
                         </form>
-                        <a href="#" class="forget_pass">Forgot Your Password?</a>
                     </div>
                 </div>
                 <div class="col-lg-6">

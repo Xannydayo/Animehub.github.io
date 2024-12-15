@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 use App\Http\Controllers\AllController;
 use App\Http\Controllers\CommentController;
@@ -19,7 +19,7 @@ Route::get('/watchingss', [AllController::class, 'watchingss']);
 Route::get('/login', [AllController::class, 'login']);
 Route::get('/signup', [AllController::class, 'signup']);
 // AUTH PROCESS
-Route::post('/login', [AllController::class, 'loginProcess']);
+Route::post('/login', [AllController::class, 'loginProcess'])->name('login.process');
 Route::post('/signup/process', [AllController::class, 'signupProcess']);
 
 Route::post('/index', function () {
