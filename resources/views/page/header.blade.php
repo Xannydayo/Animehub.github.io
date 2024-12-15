@@ -30,7 +30,6 @@
             </div>
             <div class="col-lg-2">
                 <div class="header__right">
-                    <a href="#" class="search-switch"><span class="icon_search"></span></a>
                     <a href="/login"><span class="icon_profile"></span></a>
                 </div>
             </div>

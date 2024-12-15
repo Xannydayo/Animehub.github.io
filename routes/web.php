@@ -5,7 +5,8 @@ use App\Http\Controllers\CommentController;
 use Illuminate\Support\Facades\Route;
 
 // PAGE
-Route::get('/', [AllController::class, 'index']);
+Route::get('/', [AllController::class, 'login']);
+Route::get('/index', [AllController::class, 'index']);
 Route::get('/anime/detail', [AllController::class, 'animeDetail']);
 Route::get('/blog', [AllController::class, 'blog']);
 Route::get('/blog/detail', [AllController::class, 'blogDetail']);

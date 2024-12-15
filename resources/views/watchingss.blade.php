@@ -62,7 +62,7 @@
                         <h1 style="font-weight: bold; color: white;">Oshi No Ko</h1>
                         <br>
                         <video id="player" playsinline controls data-poster="./videos/1356876.jpeg">
-                            <source src="videos/oshino.mp4" type="video/mp4" />
+                            <source src="videos/oshi.mp4" type="video/mp4" />
                             <!-- Captions are optional -->
                             <track kind="captions" label="English captions" src="#" srclang="en" default />
                         </video>
